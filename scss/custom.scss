@@ -3,6 +3,170 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Raleway:ital,wght@0,400;0,700;1,400&family=Source+Sans+3&display=swap');
+
+$primary:       #F27057;
+$secondary:     #F27057;
+$success:       #A4D882;
+$info:          #59C1EF;
+$warning:       #FFF689;
+$danger:        #E5446D;
+$light:         #ffffff;
+$dark:          #016566;
+
+$h1-font-size:                5.653rem;
+$h2-font-size:                3.998rem;
+$h3-font-size:              2.827rem;
+$h4-font-size:                1.999rem;
+$h5-font-size:                1.414rem;
+$h6-font-size:                1rem;
+
+
 
 // Then add additional custom code here
+$headings-font-family: 'raleway', sans-serif;
+
+.script {
+  font-family: 'praise', sans-serif;
+ }
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+// navbar
+.navbar {
+    font-family: 'raleway', sans-serif;
+    } 
+
+//hero banner
+#hero {
+    background-image: url(../images/paddle-board.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #hero .d-flex{
+    height: 50vh;
+  }
+//fan faves
+.shop-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.soda-faves {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0em;
+  padding-top: 3em;
+
+}
+
+.soda-faves > a > img {
+  width: 100%;
+}
+
+.fan-faves > h2 {
+  background-color: #016566;
+  color: #fff;
+  text-align: center;
+  padding: 9px;
+  margin-top: -3rem;
+}
+
+.fan-faves {
+  display: grid;
+  grid-template-rows: 1;
+}
+
+.soda-faves > a {
+  width: 15%;
+}
+
+.soda-faves > a:hover {
+  transform: translateY(-2em);
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+//aknowlegment
+#acknowledgment {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+  //carousel
+  // $carousel-item-transition-duration: .3s;
+  // $carousel-indicator-width:           0;
+  // $carousel-transition:                transform 0s linear, opacity 3s linear;
+
+  //follow
+
+  .follow {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .follow > a {
+    width: 3em;
+
+  }
+.follow > a > img {
+  width: 3em;
+}
+
+.follow > a:hover {
+  opacity: 50%;
+}
+
+  //about us
+  #hero-wtb {
+    background-image: url(../images/banner-where-to-buy.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 20em;
+  }
+
+#hero-wtb > img {
+  width: auto;
+}
+
+#our-story {
+  display: flex;
+  gap: 1em;
+}
+
+#our-story > img {
+  width: 50%;
+}
+
+.our-values {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
+}
+
+.our-values > img {
+  width: 50%;
+}
+
+
+
+#values > h2 {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+}
+
+
+// where to buy
+
+#where-to-buy {
+  display: grid;
+  grid-template-areas: 1fr 1fr;
+}

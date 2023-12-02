@@ -11873,6 +11873,45 @@ textarea.form-control-lg {
   font-family: "raleway", sans-serif;
 }
 
+.navbar-brand > img {
+  height: 2em;
+}
+
+footer {
+  display: flex;
+  background-color: #016566;
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 3rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+footer > img {
+  height: 2em;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer > a:hover {
+  color: #F27057;
+}
+
+#small-icons {
+  display: flex;
+  gap: 1em;
+}
+
+#small-icons > a > img {
+  height: 2em;
+}
+
+#smal-icons > a:hover {
+  opacity: 50%;
+}
+
 #hero {
   background-image: url(../images/paddle-board.jpg);
   background-position: center center;
@@ -11908,6 +11947,8 @@ textarea.form-control-lg {
   text-align: center;
   padding: 9px;
   margin-top: -3rem;
+  z-index: 10;
+  position: relative;
 }
 
 .fan-faves {
@@ -11987,9 +12028,25 @@ textarea.form-control-lg {
   align-items: flex-end;
 }
 
-#where-to-buy {
+#map {
+  margin-top: 3em;
+}
+
+#accordionFlushExample {
   display: grid;
-  grid-template-areas: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.accordion-body > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-body > ul > li > a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=custom.css.map */

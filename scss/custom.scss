@@ -10,7 +10,7 @@
 $primary:       #F27057;
 $secondary:     #F27057;
 $success:       #A4D882;
-$info:          #59C1EF;
+$info:          #88D9DB;
 $warning:       #FFF689;
 $danger:        #E5446D;
 $light:         #ffffff;
@@ -41,7 +41,44 @@ $headings-font-family: 'raleway', sans-serif;
 
 .navbar-brand > img{
   height: 2em;
+  padding-left: 30px;
 }
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.navbar-nav > li > a:hover {
+  color: $primary;
+}
+
+
+
+@media (max-width:1000px){ 
+
+  .navbar-nav > li {
+    padding-left: 1rem;
+  }
+
+  .brand {
+    display: none;
+  }
+}
+
+@media (min-width:1000px) {
+  .brand2 {
+    display: none;
+  }
+}
+
+
 
 // footer
 footer {
@@ -51,10 +88,14 @@ footer {
   padding: 1rem 3rem 1rem 3rem;
   color: #fff;
   margin-top: 3rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  align-items: center;
 }
 
 footer > img {
-  height: 2em;
+  height: 10%;
+  width: 10%;
 }
 
 footer > a {
@@ -75,22 +116,33 @@ footer > a:hover {
   height: 2em;
 }
 
-#smal-icons > a:hover {
-  opacity: 50%;
+#small-icons a:hover {
+  opacity : 80%;
 }
-
 
 //hero banner
 #hero {
-    background-image: url(../images/paddle-board.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  background-image: url(../images/paddle-board.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 10pt;
+  border-style: solid;
+  border-color: #88D9DB;
+  border-top: 0pt;
+  border-left: 0pt;
+  border-right: 0pt;
+  box-shadow: 0px 1px 6px #ababab;
+}
 
-  #hero .d-flex{
-    height: 50vh;
-  }
+#made {
+  padding-right: 70px;
+}
+
+
+#hero .d-flex{
+  height: 50vh;
+}
 //fan faves
 .shop-now {
   display: flex;
@@ -98,6 +150,11 @@ footer > a:hover {
   justify-content: center;
   margin-top: 3em;
 }
+
+.shop-now > button {
+  box-shadow: 0px 1px 6px #ababab;
+}
+
 .soda-faves {
   display: flex;
   justify-content: space-between;
@@ -118,6 +175,7 @@ footer > a:hover {
   margin-top: -3rem;
   z-index: 10;
   position: relative;
+  box-shadow: 0px 1px 6px #ababab;
 }
 
 .fan-faves {
@@ -134,83 +192,192 @@ footer > a:hover {
   transition: ease-in-out;
   transition-duration: 100ms;
 }
+
+@media (max-width:1000px) {
+#s-b, #l-l {
+  display: none;
+}
+
+.soda-faves > a {
+  width: 25%;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > img {
+  height: 25%;
+  width: 25%;
+}
+
+}
+
 //aknowlegment
 #acknowledgment {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-  //carousel
-  // $carousel-item-transition-duration: .3s;
-  // $carousel-indicator-width:           0;
-  // $carousel-transition:                transform 0s linear, opacity 3s linear;
 
-  //follow
 
-  .follow {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-  }
 
-  .follow > a {
-    width: 3em;
+.carousel-item {
+  transition: transform 30s linear;
+}
 
-  }
+//follow
+
+.follow {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.follow > a {
+  width: 3em;
+
+}
 .follow > a > img {
   width: 3em;
+  box-shadow: 0px 1px 6px #ababab;
+  border-radius: 50%;
 }
 
 .follow > a:hover {
-  opacity: 50%;
+  opacity: 80%;
+}
+
+
+
+#social {
+  background-color: #88D9DB;
+  padding-top: 3rem;
+  box-shadow: 0px 1px 6px #ababab;
 }
 
   //about us
-  #hero-wtb {
-    background-image: url(../images/banner-where-to-buy.jpg);
-    background-position: center center;
+  #hero-au {
+    background-image: url(../images/about-us-banner.jpg);
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 20em;
+    border-bottom: 10pt;
+    border-style: solid;
+    border-color: #88D9DB;
+    border-top: 0pt;
+    border-left: 0pt;
+    border-right: 0pt;
+    box-shadow: 0px 1px 6px #ababab;
+  }
+
+  #heroaboutus > img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+
+  #hero-wtb {
+    background-image: url(../images/banner-where-to-buy.jpg);
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 20em;
+    box-shadow: 0px 1px 6px #ababab;
   }
 
 #hero-wtb > img {
   width: auto;
 }
 
-#our-story {
-  display: flex;
-  gap: 1em;
+blockquote:before {
+  color: #F27057;
+  content: open-quote;
+  font-size: 3em;
+  font-family: praise, serif;
+  line-height: 0;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
+
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-right: 70px;
+  line-height: 1.5em;
+}
+
+// #our-story-text {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// #our-story {
+//   padding: 1em;
+//   display: flex;
+//   gap: 1em;
+// }
 
 #our-story > img {
   width: 50%;
+  height: 50%;
 }
 
-.our-values {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 1em;
-}
+// .our-values {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   gap: 1em;
+// }
 
-.our-values > img {
+.values-image {
   width: 50%;
+  height: 50%;
+  align-self: center;
 }
 
 
 
-#values > h2 {
-  display: flex;
-  width: 50%;
-  align-items: flex-end;
+// #values > h2 {
+//   display: flex;
+//   width: 50%;
+//   align-items: flex-end;
+// }
+
+@media (max-width:1000px) {
+
+  .abou
+
+  .values-image {
+    object-fit: cover;
+    align-self: center;
+  }
+
+ #values {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #our-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
-
-
 // where to buy
 
 #map {
   margin-top: 3em;
+}
+
+#find-retailer > h3{
+text-align: center;
+padding-top: 1rem;
 }
 
 #accordionFlushExample {
@@ -218,6 +385,14 @@ footer > a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   margin-top: 3em;
+}
+
+@media (max-width:1000px) {
+
+  #accordionFlushExample {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .accordion-body > ul {
@@ -228,4 +403,34 @@ padding: 0;
 
 .accordion-body > ul > li > a {
   text-decoration: none;
+}
+
+#become-retailer > h4 {
+  text-align: center;
+}
+
+#become-retailer {
+  padding-top: 1rem;
+  background-color: #88D9DB;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#retailer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#hero-au {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#hero-au h4 {
+  color: white;
+  text-align: right;
 }

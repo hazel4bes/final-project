@@ -11911,7 +11911,7 @@ footer {
   background-color: #016566;
   justify-content: space-between;
   padding: 1rem 3rem 1rem 3rem;
-  color: #fff;
+  color: #ffffff;
   margin-top: 3rem;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -11925,7 +11925,7 @@ footer > img {
 
 footer > a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 footer > a:hover {
@@ -11950,12 +11950,6 @@ footer > a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: 10pt;
-  border-style: solid;
-  border-color: #88D9DB;
-  border-top: 0pt;
-  border-left: 0pt;
-  border-right: 0pt;
   box-shadow: 0px 1px 6px #ababab;
 }
 
@@ -12074,12 +12068,6 @@ footer > a:hover {
   margin: 0;
   padding: 0;
   height: 20em;
-  border-bottom: 10pt;
-  border-style: solid;
-  border-color: #88D9DB;
-  border-top: 0pt;
-  border-left: 0pt;
-  border-right: 0pt;
   box-shadow: 0px 1px 6px #ababab;
 }
 
@@ -12100,10 +12088,6 @@ footer > a:hover {
   box-shadow: 0px 1px 6px #ababab;
 }
 
-#hero-wtb > img {
-  width: auto;
-}
-
 blockquote:before {
   color: #F27057;
   content: open-quote;
@@ -12115,7 +12099,7 @@ blockquote:before {
 }
 
 blockquote {
-  quotes: "“" "”" "‘" "’";
+  quotes: "“";
   margin-right: 70px;
   line-height: 1.5em;
 }
@@ -12132,7 +12116,7 @@ blockquote {
 }
 
 @media (max-width: 1000px) {
-  .abou .values-image {
+  .values-image {
     object-fit: cover;
     align-self: center;
   }
@@ -12149,11 +12133,6 @@ blockquote {
 }
 #map {
   margin-top: 3em;
-}
-
-#find-retailer > h3, #find-retailer > .h3 {
-  text-align: center;
-  padding-top: 1rem;
 }
 
 #accordionFlushExample {
@@ -12176,10 +12155,6 @@ blockquote {
 
 .accordion-body > ul > li > a {
   text-decoration: none;
-}
-
-#become-retailer > h4, #become-retailer > .h4 {
-  text-align: center;
 }
 
 #become-retailer {

@@ -83,10 +83,10 @@ $headings-font-family: 'raleway', sans-serif;
 // footer
 footer {
   display: flex;
-  background-color: #016566;
+  background-color: $dark;
   justify-content: space-between;
   padding: 1rem 3rem 1rem 3rem;
-  color: #fff;
+  color: $light;
   margin-top: 3rem;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -100,11 +100,11 @@ footer > img {
 
 footer > a {
   text-decoration: none;
-  color: #fff;
+  color: $light;
 }
 
 footer > a:hover {
-  color: #F27057;
+  color: $primary;
 }
 
 #small-icons {
@@ -126,12 +126,6 @@ footer > a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: 10pt;
-  border-style: solid;
-  border-color: #88D9DB;
-  border-top: 0pt;
-  border-left: 0pt;
-  border-right: 0pt;
   box-shadow: 0px 1px 6px #ababab;
 }
 
@@ -265,12 +259,6 @@ footer > img {
     margin: 0;
     padding: 0;
     height: 20em;
-    border-bottom: 10pt;
-    border-style: solid;
-    border-color: #88D9DB;
-    border-top: 0pt;
-    border-left: 0pt;
-    border-right: 0pt;
     box-shadow: 0px 1px 6px #ababab;
   }
 
@@ -291,10 +279,6 @@ footer > img {
     box-shadow: 0px 1px 6px #ababab;
   }
 
-#hero-wtb > img {
-  width: auto;
-}
-
 blockquote:before {
   color: #F27057;
   content: open-quote;
@@ -306,32 +290,15 @@ blockquote:before {
 }
 
 blockquote {
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C";
   margin-right: 70px;
   line-height: 1.5em;
 }
-
-// #our-story-text {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// #our-story {
-//   padding: 1em;
-//   display: flex;
-//   gap: 1em;
-// }
 
 #our-story > img {
   width: 50%;
   height: 50%;
 }
-
-// .our-values {
-//   display: flex;
-//   flex-direction: row-reverse;
-//   gap: 1em;
-// }
 
 .values-image {
   width: 50%;
@@ -339,18 +306,7 @@ blockquote {
   align-self: center;
 }
 
-
-
-// #values > h2 {
-//   display: flex;
-//   width: 50%;
-//   align-items: flex-end;
-// }
-
 @media (max-width:1000px) {
-
-  .abou
-
   .values-image {
     object-fit: cover;
     align-self: center;
@@ -375,10 +331,9 @@ blockquote {
   margin-top: 3em;
 }
 
-#find-retailer > h3{
-text-align: center;
-padding-top: 1rem;
-}
+// #find-retailer > h3 {
+// padding-top: 1rem;
+// }
 
 #accordionFlushExample {
   display: grid;
@@ -405,9 +360,9 @@ padding: 0;
   text-decoration: none;
 }
 
-#become-retailer > h4 {
-  text-align: center;
-}
+// #become-retailer > h4 {
+//   text-align: center;
+// }
 
 #become-retailer {
   padding-top: 1rem;

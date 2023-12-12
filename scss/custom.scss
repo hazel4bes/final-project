@@ -59,8 +59,6 @@ $headings-font-family: 'raleway', sans-serif;
   color: $primary;
 }
 
-
-
 @media (max-width:1000px){ 
 
   .navbar-nav > li {
@@ -77,8 +75,6 @@ $headings-font-family: 'raleway', sans-serif;
     display: none;
   }
 }
-
-
 
 // footer
 footer {
@@ -132,7 +128,6 @@ footer > a:hover {
 #made {
   padding-right: 70px;
 }
-
 
 #hero .d-flex{
   height: 50vh;
@@ -360,10 +355,6 @@ padding: 0;
   text-decoration: none;
 }
 
-// #become-retailer > h4 {
-//   text-align: center;
-// }
-
 #become-retailer {
   padding-top: 1rem;
   background-color: #88D9DB;
@@ -386,6 +377,6 @@ padding: 0;
 }
 
 #hero-au h4 {
-  color: white;
+  color: $light;
   text-align: right;
 }
